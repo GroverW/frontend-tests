@@ -1,0 +1,25 @@
+.container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 50px 0px 0px 200px;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.slide-out {
+  position: absolute;
+}
+
+#b1 {
+  left: 40px;
+  top: 20px;
+}
+#b2 {
+  left: 130px;
+  top: 50px;
+}
+#b3 {
+  left: 50px;
+  top: 100px;
+}
