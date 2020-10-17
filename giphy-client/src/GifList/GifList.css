@@ -1,0 +1,11 @@
+.GifList {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  width: 400px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
