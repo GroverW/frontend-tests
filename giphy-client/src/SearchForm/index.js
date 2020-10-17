@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { SEARCH_QUERY, INITIAL_STATE } from './constants';
 
-export default function Search({ getResults }) {
+export default function SearchForm({ getResults }) {
   const [formValues, setFormValues] = useState({ ...INITIAL_STATE });
 
   const handleChange = (evt) => {
@@ -11,11 +11,11 @@ export default function Search({ getResults }) {
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    getResults(formValues);
+    getResults(formValues[SEARCH_QUERY]);
   }
 
   return (
-    <div className="Search">
+    <div className="SearchForm">
       <form onSubmit={handleSubmit}>
         <input
           type="text"
