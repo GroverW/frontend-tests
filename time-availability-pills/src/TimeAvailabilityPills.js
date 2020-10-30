@@ -1,12 +1,19 @@
 import PropTypes from 'prop-types';
+import { formatTime, getIntervalsMap, getAvailabilityMap } from './helpers';
 import './TimeAvailabilityPills.css';
 
 function TimeAvailabilityPills({ start, end, duration, events }) {
+  const intervals = getIntervalsMap(start, end, duration);
+  const availability = getAvailabilityMap(intervals, duration, events);
 
-  console.log(start, end, duration);
   return (
     <div className="TimeAvailabilityPills">
-
+      {intervals.map((interval, current) => (
+        <div key={interval} className={`pill ${availability[current]}`} >
+          {formatTime(interval)}
+        </div>
+      ))
+      }
     </div>
   );
 }
