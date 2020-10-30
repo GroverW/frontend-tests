@@ -1,0 +1,26 @@
+.TimeAvailabilityPills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.pill {
+  font-size: .75rem;
+  margin-right: 5px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.pill.available {
+  background-color: rgb(145, 202, 78);
+  color: white;
+}
+
+.pill.unavailable {
+  background-color: rgb(230, 230, 230);
+  color: rgba(255, 255, 255, 0);
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
