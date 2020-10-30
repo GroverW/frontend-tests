@@ -11,14 +11,14 @@ const INITIAL_VALUES = {
 
 function MeetingForm() {
   const isFormValid = ({ MeetingDate, MeetingDuration }) => {
-    console.log(MeetingDate, MeetingDuration);
     const date = new Date(`${MeetingDate} 9:00:00`);
+    const duration = +MeetingDuration;
     const isValidDate = date instanceof Date && !Number.isNaN(date);
-    const isValidDuration = !Number.isNaN(+MeetingDuration) && +MeetingDuration > 0;
+    const isValidDuration = !Number.isNaN(duration) && duration > 0;
     return isValidDate && isValidDuration;
   }
 
-  const getStartDate = (date) => new Date(`${date} 9:00:00`);
+  const getStartDate = (date) => new Date(`${date} 8:00:00`);
   const getEndDate = (date) => new Date(`${date} 13:00:00`);
 
   return (
