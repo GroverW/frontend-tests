@@ -1,0 +1,18 @@
+input:first-child, select:first-child {
+  border-radius: 3px 0px 0px 3px;
+}
+
+input:last-child, select:last-child {
+  border-radius: 0px 3px 3px 0px;
+}
+
+input, select {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid rgb(150, 150, 150);
+  margin-right: -1px;
+  color: rgb(100, 100, 100);
+  box-sizing: border-box;
+  width: 200px;
+  padding: 8px 10px;
+  height: 40px;
+}
