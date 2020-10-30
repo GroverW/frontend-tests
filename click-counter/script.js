@@ -5,7 +5,7 @@ let currentClicks = 0;
 
 const handleClick = () => {
   currentClicks += 1;
-  clicksContainer.innerText = currentClicks;
+  clicksContainer.textContent = currentClicks;
 };
 
 incrementButton.addEventListener('click', handleClick);
