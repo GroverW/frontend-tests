@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#delete {
+  background-color: rgb(100, 100, 100);
+}
+
+#modal-container {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.4);
+}
+
+#modal-container.modal-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-main {
+  border-radius: 7px;
+  overflow: hidden;
+  background-color: rgb(240, 240, 240);
+}
+
+#modal-header,
+#modal-footer {
+  width: 100%;
+  padding: 15px;
+  background-color: rgb(220, 220, 220);
+}
+
+#modal-content {
+  min-height: 100px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+#modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#modal-footer button:first-of-type {
+  margin-right: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: white;
+  border-radius: 3px;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#modal-cancel {
+  background-color: rgb(100, 100, 100);
+}
+
+#modal-cancel:hover {
+  background-color: rgb(80, 80, 80);
+}
+
+#modal-cancel:focus {
+  background-color: rgb(50, 50, 50);
+}
+
+#modal-confirm {
+  background-color: rgb(235, 125, 16);
+}
+
+#modal-confirm:hover {
+  background-color: rgb(216, 113, 11);
+}
+
+#modal-confirm:focus {
+  background-color: rgb(180, 94, 8);
+}
