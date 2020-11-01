@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+#clock {
+  width: 200px;
+  height: 200px;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 100%;
+  background-color: black;
+}
+
+#clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 100%;
+  padding: 3px;
+  background-color: white;
+}
+
+#hours-hand,
+#minutes-hande,
+#seconds-hand {
+  position: absolute;
+  display: flex;
+  align-items: top;
+}
+
+#hours-hand {
+  width: 7px;
+  height: 45%;
+}
+#minutes-hand {
+  width: 7px;
+  height: 65%;
+}
+#seconds-hand {
+  width: 5px;
+  height: 80%;
+}
+
+#hours-hand .fill,
+#minutes-hand .fill,
+#seconds-hand .fill {
+  width: 100%;
+  height: 60%;
+  border-radius: 5px;
+}
+
+#hours-hand .fill,
+#minutes-hand .fill {
+  background-color: black;
+}
+
+#seconds-hand .fill {
+  background-color: red;
+}
+
+.tick-mark {
+  position: absolute;
+  display: flex;
+  align-items: top;
+  width: 6px;
+  height: 95%;
+}
+
+.tick-mark .tick-fill {
+  width: 100%;
+  height: 10%;
+  background-color: black;
+  border-radius: 5px;
+}
+
+#tick-mark-3 {
+  transform: rotate(90deg);
+}
+
+#tick-mark-6 {
+  transform: rotate(180deg);
+}
+
+#tick-mark-9 {
+  transform: rotate(270deg);
+}
