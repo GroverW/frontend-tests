@@ -50,7 +50,7 @@ const clock = new Clock({
 let animationId;
 let timeElapsed;
 const tick = (currentTime = 0) => {
-  if(timeElapsed === undefined) timeElapsed = currentTime;
+  if (timeElapsed === undefined) timeElapsed = currentTime;
   if (currentTime - timeElapsed > 1000) {
     timeElapsed = currentTime;
     clock.setCurrentTime();
