@@ -3,8 +3,6 @@ const hamburgerLink = document.querySelector('.hamburger-icon');
 const mobileMenu = document.querySelector('.side-nav');
 const mobileOverlay = document.querySelector('.mobile-overlay');
 
-
-
 const handleOpenMenu = function() {
   mobileOverlay.classList.add('show');
   setTimeout(() => {

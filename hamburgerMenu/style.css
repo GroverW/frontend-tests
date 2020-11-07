@@ -65,62 +65,62 @@ nav.side-nav.show {
   transform: translateX(0%);
 }
 
-.navigation-mobile {
+.navlinks-mobile {
   display: flex;
   flex-direction: column;
 }
 
-.navigation-mobile li {
+.navlinks-mobile li {
   width: 100%;
 }
 
-.navigation-mobile a {
+.navlinks-mobile a {
   display: block;
   text-decoration: none;
   color: rgb(220, 220, 220);
   padding: 10px 20px;
 }
 
-.navigation-mobile a.active {
+.navlinks-mobile a.active {
   color: rgb(255, 255, 255);
   background-color: rgb(255, 68, 68);
 }
-.navigation-mobile a.active:hover {
+.navlinks-mobile a.active:hover {
   cursor: pointer;
 }
 
-.navigation-mobile a:hover:not(.active) {
+.navlinks-mobile a:hover:not(.active) {
   background-color: rgb(50, 50, 50);
   color: rgb(255, 255, 255);
 }
 
-.navigation-submenu a {
+.navlinks-submenu a {
   padding: 10px 30px;
   font-size: 0.9rem;
   color: rgb(170, 170, 170);
 }
 
-.navigation-mobile .navigation-submenu a:hover {
+.navlinks-mobile .navlinks-submenu a:hover {
   color: rgb(220, 220, 220);
   background-color: transparent;
 }
 
-.navigation-desktop {
+.navlinks-desktop {
   display: flex;
   flex-direction: row;
   list-style-type: none;
 }
 
-.navigation-desktop li {
+.navlinks-desktop li {
   position: relative;
   text-align: center;
 }
 
-.navigation-desktop li.dropdown a {
+.navlinks-desktop li.dropdown a {
   padding-left: 0px;
 }
 
-.navigation-desktop li.dropdown a::after {
+.navlinks-desktop li.dropdown a::after {
   position: absolute;
   top: 4px;
   right: 12px;
@@ -129,7 +129,7 @@ nav.side-nav.show {
   content: '\2304';
 }
 
-.navigation-desktop a {
+.navlinks-desktop a {
   display: block;
   min-width: 85px;
   padding: 10px;
@@ -140,7 +140,7 @@ nav.side-nav.show {
   font-size: 0.9rem;
 }
 
-.navigation-desktop a:hover:not(.active) {
+.navlinks-desktop a:hover:not(.active) {
   background-color: rgb(30, 30, 30);
   color: rgb(220, 220, 220);
 }
@@ -150,7 +150,8 @@ a.active {
 }
 
 .logo {
-  color: red;
+  color: rgb(255, 68, 68);
+  font-weight: 500;
   position: absolute;
 }
 
@@ -204,7 +205,7 @@ a.active {
 }
 
 @media (max-width: 768px) {
-  .navigation-desktop {
+  .navlinks-desktop {
     display: none;
   }
 
