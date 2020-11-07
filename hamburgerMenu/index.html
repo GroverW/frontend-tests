@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <nav>
-    <ul class="navigation">
-      <li><a class="active" href="#">Home</a></li>
-      <li class="dropdown mr-200"><a href="#">Menu</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <div class="logo">
-      Company Logo
-    </div>
-  </nav>
+  <div class="main-container">
+    <nav class="top-nav">
+      <ul class="navigation-desktop">
+        <li><a class="active" href="#">Home</a></li>
+        <li class="dropdown mr-200"><a href="#">Menu</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="logo">
+        Company Logo
+      </div>
+      <a class="hamburger-icon"><span></span></a>
+    </nav>
+  </div>
+  <div class="mobile-overlay">
+    <nav class="side-nav">
+      <ul class="navigation-mobile">
+        <li><a class="active">Home</a></li>
+        <li>
+          <a href="#">Menu</a>
+          <ul class="navigation-submenu">
+            <li><a href="#">Item #1</a></li>
+            <li><a href="#">Item #2</a></li>
+            <li><a href="#">Item #3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
   <script src="script.js"></script>
 </body>
+
 </html>
